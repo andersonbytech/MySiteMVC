@@ -9,10 +9,14 @@ namespace MySiteMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+            home.Nome = "Anderson Guimarães";
+            home.Email = "anderson.sg2@gmail.com";
+
+            return View(home);
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }

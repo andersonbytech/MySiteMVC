@@ -6,6 +6,10 @@ namespace MySiteMVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+            builder.Services.AddServerSideBlazor();
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
